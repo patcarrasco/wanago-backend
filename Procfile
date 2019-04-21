@@ -1,1 +1,1 @@
-web: RAILS_ENV=production bundle exec bin/rails server
+web: RAILS_ENV=production bundle exec rails server
