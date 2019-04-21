@@ -1,1 +1,1 @@
-web: bin/rails server -p $PORT -e $RAILS_ENV
+web: RAILS_ENV=production bundle exec bin/rails server
