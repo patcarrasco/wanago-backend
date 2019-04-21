@@ -35,7 +35,7 @@ class Api::V1::EventsController < ApplicationController
             sort:'date,asc',
             includeTBA: 'no',
             includeTBD: 'no',
-            radius: 100,
+            radius: 30,
             unit: 'miles',
         }
         data = client.get_events(search_params)
