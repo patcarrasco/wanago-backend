@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://www.wanago.herokuapp.com, https://wanago.herokuapp.com, localhost:5000'
+    origins ['https://www.wanago.herokuapp.com, https://wanago.herokuapp.com, localhost:5000']
 
     resource '*',
       headers: :any,
