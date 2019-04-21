@@ -33,8 +33,6 @@ Rails.application.routes.draw do
       get "/events/recent" => "events#recent"
       get "/events/:genre" => "events#by_genre"
 
-      get "/firebase" => "firebase#creds"
-
       resources :hangouts, only: %i[index create update]
 
       # venue route data from api
