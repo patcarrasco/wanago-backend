@@ -41,6 +41,7 @@ Rails.application.routes.draw do
       post "/venues/by_location" => "venues#by_location"
       post "/venues/by_id" => "venues#by_id"
       
+      root to: "users#index"
     end
   end
 end
