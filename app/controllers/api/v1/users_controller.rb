@@ -94,7 +94,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def delete_event
-        @event = Event.find(strong_params[:event_data][:id])
+        @event = Event.find_by(identifier: strong_params[:event_data][:id])
         @user = User.find(params[:id])
         @ticket = Ticket.find_by event_id: @event.id, user_id: @user.id
         # byebug
