@@ -2,11 +2,10 @@ class Api::V1::VenuesController < ApplicationController
 
     def by_location
         client = EventService.new
-        # byebug
         search_params = {
             latlong: params[:query][:latlong],
-            size: 100, 
-            radius: 20,
+            size: 150, 
+            radius: 10,
             unit: 'miles',
             sort: 'distance,asc',
         }
@@ -21,9 +20,7 @@ class Api::V1::VenuesController < ApplicationController
             includeTBA: 'no',
             includeTBD: 'no',
             venueId: strong_params[:id],
-            radius: 20,
-            size: 100, 
-            unit: 'miles',
+            size: 50, 
         }
         data = client.get_events(search_params)
         render json: {events: data.data}
