@@ -84,7 +84,8 @@ class Api::V1::UsersController < ApplicationController
                 identifier: strong_params[:event_data][:id], 
                 name: strong_params[:event_data][:name],
                 url: strong_params[:event_data][:url],
-                date: strong_params[:event_data][:date]
+                date: strong_params[:event_data][:date],
+                information: strong_params[:event_data][:information]
             )
             if @event.save
                 @user.events << @event
@@ -130,7 +131,7 @@ class Api::V1::UsersController < ApplicationController
     private
     
     def strong_params
-        params.require(:user).permit(:username, :password, event_data: [:name, :date, :url, :id])
+        params.require(:user).permit(:username, :password, event_data: [:name, :date, :url, :id, :information])
     end
 
     def firebaseSecrets
