@@ -11,6 +11,7 @@ An interactive concert and sporting event discovery tool created with Rails, Rea
 ## Table of contents
 * [Technologies](#technologies)
 * [Web Screenshots](#web-screenshots)
+* [Mobile Screenshots](#mobile-screenshots)
 * [Additional Notes](#additional-notes)
 
 ## Technologies
@@ -32,11 +33,19 @@ Created with:
 
 ![wanago-landing](https://user-images.githubusercontent.com/39533889/56843037-f99a3b00-6869-11e9-96a9-305d4ddd85b6.png)
 
-![wanago-home](https://user-images.githubusercontent.com/39533889/56843076-6dd4de80-686a-11e9-93c9-fc4f57b6a6c5.png)
+![wanago-home](https://user-images.githubusercontent.com/39533889/56859472-6fc99b00-6959-11e9-8fd7-7bac9f6c918b.png)
 
-![eventfeed](https://user-images.githubusercontent.com/39533889/56843098-b55b6a80-686a-11e9-81b8-7ed0410936e6.png)
+![eventfeed](https://user-images.githubusercontent.com/39533889/56859450-18c3c600-6959-11e9-96e3-34621f9b05d2.png)
+
+## Mobile Screenshots
+
+<!-- <img src="https://user-images.githubusercontent.com/39533889/56859183-53c3fa80-6955-11e9-841a-9daefa1c041c.png" width="40%"/> -->
+
+<img src="https://user-images.githubusercontent.com/39533889/56859193-64747080-6955-11e9-9450-c68ee8c1532c.png" width="48%"/><img src="https://user-images.githubusercontent.com/39533889/56859201-70603280-6955-11e9-8892-8b072b7ce41f.png" width="48%"/>
 
 ## Additional Notes
 
 The initial idea behind the app also includes User-User interaction, in that User's can post events onto a global feed, as well as a friend feed. The endpoints for these features are already built into the backend, and were available in v1 of this app. I'll be integrating that functionality in the future.
+
+
 
